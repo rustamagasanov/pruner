@@ -23,6 +23,18 @@ The service exposes only one endpoint
 
 and accepts an array of `indicators` as params.
 
+## Logging
+
+The main format of the `Logger` is `JSON` and each message has the following attributes:
+
+- `m:` - the message itself
+- `s:` - severity
+- `t:` - datetime when the message was issued
+- `p:` - application(*p*rogram) name
+- `backtrace:` - if the error happened on the service side - it's stacktrace
+
+Newlines are replaced with `↲` symbol for compactness.
+
 ## How to start
 
 The service utilizes `bundler` and the gems are specified inside a `Gemfile`.
