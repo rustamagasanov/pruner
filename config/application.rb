@@ -8,6 +8,7 @@ $:.unshift File.expand_path('../../lib', __FILE__)
 
 require 'sinatra'
 require 'pruner'
+require 'pruner/version'
 require 'pruner/api'
 require 'pruner/app'
 require 'pruner/upstream_fetcher'

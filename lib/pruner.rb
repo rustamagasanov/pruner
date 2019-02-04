@@ -19,9 +19,7 @@ module Pruner
     when ::String
       { m: escape(message) }
     when ::Exception
-      {
-        m: escape("#{message.message} (#{message.class})")
-      }
+      { m: escape("#{message.message} (#{message.class})") }
     when ::Hash
       message.dup
     else
