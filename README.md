@@ -17,7 +17,7 @@ Service config lies in `.env` file. Configurable params are:
 
 ## API
 
-The service exposes only one endpoint `tree/:name`
+The service exposes only one endpoint
 
 - `tree/:name`
 
