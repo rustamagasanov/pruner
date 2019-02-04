@@ -5,7 +5,7 @@ module Pruner::Api::Tree
 
   def self.registered(app)
     app.get '/tree/:name' do |upstream_name|
-      logger.info params
+      logger.debug m: params
       raise InvalidParameters, "Invalid params: #{params}" if
         params['indicator_ids'] && !params['indicator_ids'].is_a?(Array)
       upstream_data = Pruner::UpstreamFetcher.call(upstream_name)

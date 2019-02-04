@@ -30,7 +30,6 @@ RSpec.describe Pruner::UpstreamFetcher do
       before do
         allow(HTTP).to receive(:get).and_return(response)
         allow(response).to receive(:code).and_return(500)
-        allow(Kernel).to receive(:sleep)
         allow_any_instance_of(Object).to receive(:sleep)
       end
 

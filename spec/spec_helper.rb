@@ -11,9 +11,6 @@ require File.expand_path('../../config/environment.rb', __FILE__)
 
 Pruner.logger = Logger.new('/dev/null')
 
-module RSpecMixin
+RSpec.configure do |config|
   include Rack::Test::Methods
-  def app() Sinatra::Application end
 end
-
-RSpec.configure { |c| c.include RSpecMixin }
