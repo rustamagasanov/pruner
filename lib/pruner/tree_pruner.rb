@@ -12,11 +12,11 @@ module Pruner
     end
 
     def call
-      unless tree_pruned?
-        search_tree(tree)
-        logger.info m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
-        prune_tree(tree)
-      end
+      return tree if tree_pruned? || tree.empty? || ids.empty?
+      search_tree(tree)
+      logger.info m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
+      return [] if ids_found.empty?
+      prune_tree(tree)
       tree
     end
 

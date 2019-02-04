@@ -1,0 +1,944 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kf6xwyykee.execute-api.us-east-1.amazonaws.com/production/tree/input
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kf6xwyykee.execute-api.us-east-1.amazonaws.com
+      User-Agent:
+      - http.rb/4.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '64634'
+      Connection:
+      - close
+      Date:
+      - Mon, 04 Feb 2019 20:57:30 GMT
+      X-Amzn-Requestid:
+      - 7cb4f842-28bf-11e9-936f-a71fbf9558e5
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '64634'
+      X-Amz-Apigw-Id:
+      - Ul8RLEd1oAMFxJg=
+      X-Amzn-Trace-Id:
+      - Root=1-5c58a73a-ed9094b0e68a7630cea495b0;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0437902e99783229e3317bb4dfe27240.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - aHkqGQ5AEnyLKN2Pk-iTU_51Or_0uPYeEgsVZh5jk7OBwRBpPgyc1g==
+    body:
+      encoding: ASCII-8BIT
+      string: "[\n  {\n    \"id\": 1, \n    \"name\": \"Urban Extent\", \n    \"sub_themes\":
+        [\n      {\n        \"categories\": [\n          {\n            \"id\": 1,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        299, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Area\", \n            \"unit\": \"(sq. km.)\"\n
+        \         }, \n          {\n            \"id\": 2, \n            \"indicators\":
+        [\n              {\n                \"id\": 300, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Population\",
+        \n            \"unit\": \"(thousands)\"\n          }, \n          {\n            \"id\":
+        3, \n            \"indicators\": [\n              {\n                \"id\":
+        301, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Population density\", \n            \"unit\": \"(people
+        per sq. km.)\"\n          }\n        ], \n        \"id\": 1, \n        \"name\":
+        \"Administrative\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 4, \n            \"indicators\": [\n              {\n
+        \               \"id\": 302, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Area\", \n            \"unit\": \"(sq.
+        km.)\"\n          }, \n          {\n            \"id\": 5, \n            \"indicators\":
+        [\n              {\n                \"id\": 303, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Population\",
+        \n            \"unit\": \"(thousands)\"\n          }, \n          {\n            \"id\":
+        6, \n            \"indicators\": [\n              {\n                \"id\":
+        304, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Population density\", \n            \"unit\": \"(people
+        per sq. km.)\"\n          }\n        ], \n        \"id\": 2, \n        \"name\":
+        \"Built up\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 7, \n            \"indicators\": [\n              {\n
+        \               \"id\": 305, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Area\", \n            \"unit\": \"(sq.
+        km.)\"\n          }, \n          {\n            \"id\": 8, \n            \"indicators\":
+        [\n              {\n                \"id\": 306, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Population\",
+        \n            \"unit\": \"(thousands)\"\n          }, \n          {\n            \"id\":
+        9, \n            \"indicators\": [\n              {\n                \"id\":
+        307, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Population density\", \n            \"unit\": \"(people
+        per sq. km.)\"\n          }\n        ], \n        \"id\": 3, \n        \"name\":
+        \"Lit at night\"\n      }\n    ]\n  }, \n  {\n    \"id\": 2, \n    \"name\":
+        \"Demographics\", \n    \"sub_themes\": [\n      {\n        \"categories\":
+        [\n          {\n            \"id\": 10, \n            \"indicators\": [\n
+        \             {\n                \"id\": 308, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Crude
+        birth rate\", \n            \"unit\": \"(live births per 1000 people)\"\n
+        \         }, \n          {\n            \"id\": 11, \n            \"indicators\":
+        [\n              {\n                \"id\": 1, \n                \"name\":
+        \"total\"\n              }, \n              {\n                \"id\": 2,
+        \n                \"name\": \"male\"\n              }, \n              {\n
+        \               \"id\": 3, \n                \"name\": \"female\"\n              }\n
+        \           ], \n            \"name\": \"Crude death rate\", \n            \"unit\":
+        \"(deaths per 1000 people)\"\n          }\n        ], \n        \"id\": 4,
+        \n        \"name\": \"Births and Deaths\"\n      }, \n      {\n        \"categories\":
+        [\n          {\n            \"id\": 12, \n            \"indicators\": [\n
+        \             {\n                \"id\": 4, \n                \"name\": \"0-14
+        or 65+ years\"\n              }, \n              {\n                \"id\":
+        5, \n                \"name\": \"0-14 years\"\n              }, \n              {\n
+        \               \"id\": 6, \n                \"name\": \"65+ years\"\n              }\n
+        \           ], \n            \"name\": \"Dependency ratio\", \n            \"unit\":
+        \"(percent)\"\n          }, \n          {\n            \"id\": 13, \n            \"indicators\":
+        [\n              {\n                \"id\": 7, \n                \"name\":
+        \"All ages\"\n              }, \n              {\n                \"id\":
+        8, \n                \"name\": \"At birth\"\n              }, \n              {\n
+        \               \"id\": 9, \n                \"name\": \"0-4 years\"\n              }\n
+        \           ], \n            \"name\": \"Gender ratio\", \n            \"unit\":
+        \"(percent)\"\n          }\n        ], \n        \"id\": 5, \n        \"name\":
+        \"Age and Sex\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 14, \n            \"indicators\": [\n              {\n
+        \               \"id\": 309, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Scheduled Caste (SC)\", \n            \"unit\":
+        \"(percent)\"\n          }, \n          {\n            \"id\": 15, \n            \"indicators\":
+        [\n              {\n                \"id\": 310, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Scheduled
+        Tribe (ST)\", \n            \"unit\": \"(percent)\"\n          }\n        ],
+        \n        \"id\": 6, \n        \"name\": \"Religion and social groups\"\n
+        \     }\n    ]\n  }, \n  {\n    \"id\": 3, \n    \"name\": \"Jobs\", \n    \"sub_themes\":
+        [\n      {\n        \"categories\": [\n          {\n            \"id\": 16,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        10, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 11, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 12, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Working
+        population, 15+ years\", \n            \"unit\": \"(percent)\"\n          },
+        \n          {\n            \"id\": 17, \n            \"indicators\": [\n              {\n
+        \               \"id\": 13, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 14, \n                \"name\":
+        \"Female\"\n              }, \n              {\n                \"id\": 15,
+        \n                \"name\": \"Male\"\n              }\n            ], \n            \"name\":
+        \"Working population, 7+ years\", \n            \"unit\": \"(percent)\"\n
+        \         }, \n          {\n            \"id\": 18, \n            \"indicators\":
+        [\n              {\n                \"id\": 16, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 17,
+        \n                \"name\": \"Female\"\n              }, \n              {\n
+        \               \"id\": 18, \n                \"name\": \"Male\"\n              }\n
+        \           ], \n            \"name\": \"Labor force participation, 15+ years,
+        usual\", \n            \"unit\": \"(percent of age group)\"\n          },
+        \n          {\n            \"id\": 19, \n            \"indicators\": [\n              {\n
+        \               \"id\": 19, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 20, \n                \"name\":
+        \"Female\"\n              }, \n              {\n                \"id\": 21,
+        \n                \"name\": \"Male\"\n              }\n            ], \n            \"name\":
+        \"Labor force participation, 15+ years, weekly\", \n            \"unit\":
+        \"(percent of age group)\"\n          }, \n          {\n            \"id\":
+        20, \n            \"indicators\": [\n              {\n                \"id\":
+        22, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 23, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 24, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Employment
+        rate, 7+ years, main + marginal\", \n            \"unit\": \"(percent of age
+        group)\"\n          }\n        ], \n        \"id\": 7, \n        \"name\":
+        \"Labor force\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 21, \n            \"indicators\": [\n              {\n
+        \               \"id\": 25, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 26, \n                \"name\":
+        \"Female\"\n              }, \n              {\n                \"id\": 27,
+        \n                \"name\": \"Male\"\n              }\n            ], \n            \"name\":
+        \"Unemployment rate, 15+ years, usual\", \n            \"unit\": \"(percent
+        of labor force)\"\n          }, \n          {\n            \"id\": 22, \n
+        \           \"indicators\": [\n              {\n                \"id\": 28,
+        \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 29, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 30, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Unemployment
+        rate, 15+ years, weekly\", \n            \"unit\": \"(percent of labor force)\"\n
+        \         }, \n          {\n            \"id\": 23, \n            \"indicators\":
+        [\n              {\n                \"id\": 31, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 32,
+        \n                \"name\": \"Female\"\n              }, \n              {\n
+        \               \"id\": 33, \n                \"name\": \"Male\"\n              }\n
+        \           ], \n            \"name\": \"Unemployment rate, 15\\u201324 years,
+        usual\", \n            \"unit\": \"(percent of labor force)\"\n          },
+        \n          {\n            \"id\": 24, \n            \"indicators\": [\n              {\n
+        \               \"id\": 34, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 35, \n                \"name\":
+        \"Female\"\n              }, \n              {\n                \"id\": 36,
+        \n                \"name\": \"Male\"\n              }\n            ], \n            \"name\":
+        \"Unemployment rate, 15\\u201324 years, weekly\", \n            \"unit\":
+        \"(percent of labor force)\"\n          }, \n          {\n            \"id\":
+        25, \n            \"indicators\": [\n              {\n                \"id\":
+        37, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 38, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 39, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Under-employment
+        rate, 15+ years, marginal\", \n            \"unit\": \"(percent of labor force)\"\n
+        \         }\n        ], \n        \"id\": 8, \n        \"name\": \"Unemployment\"\n
+        \     }, \n      {\n        \"categories\": [\n          {\n            \"id\":
+        26, \n            \"indicators\": [\n              {\n                \"id\":
+        40, \n                \"name\": \"Agriculture\"\n              }, \n              {\n
+        \               \"id\": 41, \n                \"name\": \"Manufacturing\"\n
+        \             }, \n              {\n                \"id\": 42, \n                \"name\":
+        \"Industry (including manufacturing)\"\n              }, \n              {\n
+        \               \"id\": 43, \n                \"name\": \"Services\"\n              }\n
+        \           ], \n            \"name\": \"Employment by sector\", \n            \"unit\":
+        \"(percent of total employment)\"\n          }, \n          {\n            \"id\":
+        27, \n            \"indicators\": [\n              {\n                \"id\":
+        44, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 45, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 46, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Farmers\",
+        \n            \"unit\": \"(percent of total employment)\"\n          }, \n
+        \         {\n            \"id\": 28, \n            \"indicators\": [\n              {\n
+        \               \"id\": 47, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 48, \n                \"name\":
+        \"Female\"\n              }, \n              {\n                \"id\": 49,
+        \n                \"name\": \"Male\"\n              }\n            ], \n            \"name\":
+        \"Self-employed\", \n            \"unit\": \"(percent of total employment)\"\n
+        \         }, \n          {\n            \"id\": 29, \n            \"indicators\":
+        [\n              {\n                \"id\": 50, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 51,
+        \n                \"name\": \"Female\"\n              }, \n              {\n
+        \               \"id\": 52, \n                \"name\": \"Male\"\n              }\n
+        \           ], \n            \"name\": \"Casual wage earners\", \n            \"unit\":
+        \"(percent of total employment)\"\n          }, \n          {\n            \"id\":
+        30, \n            \"indicators\": [\n              {\n                \"id\":
+        53, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 54, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 55, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Regular
+        wage earners\", \n            \"unit\": \"(percent of total employment)\"\n
+        \         }\n        ], \n        \"id\": 9, \n        \"name\": \"Employment\"\n
+        \     }, \n      {\n        \"categories\": [\n          {\n            \"id\":
+        31, \n            \"indicators\": [\n              {\n                \"id\":
+        56, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 57, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 58, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Labor
+        earnings by gender\", \n            \"unit\": \"(current USD per day)\"\n
+        \         }, \n          {\n            \"id\": 32, \n            \"indicators\":
+        [\n              {\n                \"id\": 59, \n                \"name\":
+        \"Agriculture\"\n              }, \n              {\n                \"id\":
+        60, \n                \"name\": \"Industry\"\n              }, \n              {\n
+        \               \"id\": 61, \n                \"name\": \"Services\"\n              }\n
+        \           ], \n            \"name\": \"Labor earnings by sector\", \n            \"unit\":
+        \"(current USD per day)\"\n          }\n        ], \n        \"id\": 10, \n
+        \       \"name\": \"Earnings\"\n      }\n    ]\n  }, \n  {\n    \"id\": 4,
+        \n    \"name\": \"Economic Activity\", \n    \"sub_themes\": [\n      {\n
+        \       \"categories\": [\n          {\n            \"id\": 33, \n            \"indicators\":
+        [\n              {\n                \"id\": 311, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"GDP\",
+        \n            \"unit\": \"(current USD, in millions)\"\n          }, \n          {\n
+        \           \"id\": 34, \n            \"indicators\": [\n              {\n
+        \               \"id\": 312, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"GDP per capita\", \n            \"unit\":
+        \"(current USD)\"\n          }, \n          {\n            \"id\": 35, \n
+        \           \"indicators\": [\n              {\n                \"id\": 62,
+        \n                \"name\": \"Agriculture, fishing, hunting and forestry (A,
+        B)\"\n              }, \n              {\n                \"id\": 63, \n                \"name\":
+        \"Mining and quarrying (C)\"\n              }, \n              {\n                \"id\":
+        64, \n                \"name\": \"Manufacturing (D)\"\n              }, \n
+        \             {\n                \"id\": 65, \n                \"name\": \"Electricity,
+        gas and water supply (E)\"\n              }, \n              {\n                \"id\":
+        66, \n                \"name\": \"Construction (F)\"\n              }, \n
+        \             {\n                \"id\": 67, \n                \"name\": \"Trade,
+        hotels and restaurants (G, H)\"\n              }, \n              {\n                \"id\":
+        68, \n                \"name\": \"Transportation, storage and communications
+        (I)\"\n              }, \n              {\n                \"id\": 69, \n
+        \               \"name\": \"Financial intermediation (J)\"\n              },
+        \n              {\n                \"id\": 70, \n                \"name\":
+        \"Real estate, renting and business activities (K)\"\n              }, \n
+        \             {\n                \"id\": 71, \n                \"name\": \"Public
+        administration (L)\"\n              }, \n              {\n                \"id\":
+        72, \n                \"name\": \"Other (M, N, O, P, Q)\"\n              }\n
+        \           ], \n            \"name\": \"GVA by sector, ISIC 3.1\", \n            \"unit\":
+        \"(percent of GDP)\"\n          }\n        ], \n        \"id\": 11, \n        \"name\":
+        \"Output\"\n      }, \n      {\n        \"categories\": [\n          {\n            \"id\":
+        36, \n            \"indicators\": [\n              {\n                \"id\":
+        313, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Light intensity per 1000 people\", \n            \"unit\":
+        \"(Digital Numbers of light per 1000 people)\"\n          }, \n          {\n
+        \           \"id\": 37, \n            \"indicators\": [\n              {\n
+        \               \"id\": 314, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Light intensity per area\", \n            \"unit\":
+        \"(Digital Numbers of light per sq. km.) \"\n          }\n        ], \n        \"id\":
+        12, \n        \"name\": \"Night light intensity\"\n      }, \n      {\n        \"categories\":
+        [\n          {\n            \"id\": 38, \n            \"indicators\": [\n
+        \             {\n                \"id\": 73, \n                \"name\": \"All\"\n
+        \             }, \n              {\n                \"id\": 74, \n                \"name\":
+        \"Groundnut\"\n              }, \n              {\n                \"id\":
+        75, \n                \"name\": \"Maize\"\n              }, \n              {\n
+        \               \"id\": 76, \n                \"name\": \"Millets\"\n              },
+        \n              {\n                \"id\": 77, \n                \"name\":
+        \"Pulses\"\n              }, \n              {\n                \"id\": 78,
+        \n                \"name\": \"Rice\"\n              }, \n              {\n
+        \               \"id\": 79, \n                \"name\": \"Sugar cane\"\n              },
+        \n              {\n                \"id\": 80, \n                \"name\":
+        \"Wheat\"\n              }\n            ], \n            \"name\": \"Crop
+        yields, monetary\", \n            \"unit\": \"(2011 USD per ha., in thousands)\"\n
+        \         }, \n          {\n            \"id\": 39, \n            \"indicators\":
+        [\n              {\n                \"id\": 81, \n                \"name\":
+        \"All\"\n              }, \n              {\n                \"id\": 82, \n
+        \               \"name\": \"Groundnut\"\n              }, \n              {\n
+        \               \"id\": 83, \n                \"name\": \"Maize\"\n              },
+        \n              {\n                \"id\": 84, \n                \"name\":
+        \"Millets\"\n              }, \n              {\n                \"id\": 85,
+        \n                \"name\": \"Pulses\"\n              }, \n              {\n
+        \               \"id\": 86, \n                \"name\": \"Rice\"\n              },
+        \n              {\n                \"id\": 87, \n                \"name\":
+        \"Sugar cane\"\n              }, \n              {\n                \"id\":
+        88, \n                \"name\": \"Wheat\"\n              }\n            ],
+        \n            \"name\": \"Crop yields, quantity\", \n            \"unit\":
+        \"(tonnes per ha.)\"\n          }\n        ], \n        \"id\": 13, \n        \"name\":
+        \"Productivity of agriculture\"\n      }, \n      {\n        \"categories\":
+        [], \n        \"id\": 14, \n        \"name\": \"Productivity of manufacturing\"\n
+        \     }, \n      {\n        \"categories\": [], \n        \"id\": 15, \n        \"name\":
+        \"Productivity of services\"\n      }\n    ]\n  }, \n  {\n    \"id\": 5, \n
+        \   \"name\": \"Infrastructure\", \n    \"sub_themes\": [\n      {\n        \"categories\":
+        [\n          {\n            \"id\": 40, \n            \"indicators\": [\n
+        \             {\n                \"id\": 89, \n                \"name\": \"Total\"\n
+        \             }, \n              {\n                \"id\": 90, \n                \"name\":
+        \"Major highways, primary and secondary\"\n              }, \n              {\n
+        \               \"id\": 91, \n                \"name\": \"Tertiary and rural\"\n
+        \             }, \n              {\n                \"id\": 92, \n                \"name\":
+        \"Other\"\n              }\n            ], \n            \"name\": \"Road
+        length\", \n            \"unit\": \"(km.)\"\n          }, \n          {\n
+        \           \"id\": 41, \n            \"indicators\": [\n              {\n
+        \               \"id\": 93, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 94, \n                \"name\":
+        \"Major highways, primary and secondary\"\n              }, \n              {\n
+        \               \"id\": 95, \n                \"name\": \"Tertiary and rural\"\n
+        \             }, \n              {\n                \"id\": 96, \n                \"name\":
+        \"Other\"\n              }\n            ], \n            \"name\": \"Road
+        intensity\", \n            \"unit\": \"(km. per 1000 sq. km.)\"\n          },
+        \n          {\n            \"id\": 42, \n            \"indicators\": [\n              {\n
+        \               \"id\": 97, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 98, \n                \"name\":
+        \"Railway\"\n              }, \n              {\n                \"id\": 99,
+        \n                \"name\": \"Metro\"\n              }\n            ], \n
+        \           \"name\": \"Number of stations\", \n            \"unit\": \"(stations)\"\n
+        \         }, \n          {\n            \"id\": 43, \n            \"indicators\":
+        [\n              {\n                \"id\": 100, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 101,
+        \n                \"name\": \"Railway\"\n              }, \n              {\n
+        \               \"id\": 102, \n                \"name\": \"Metro\"\n              }\n
+        \           ], \n            \"name\": \"Density of stations\", \n            \"unit\":
+        \"(stations per 1000 sq. km.)\"\n          }\n        ], \n        \"id\":
+        16, \n        \"name\": \"Connectivity\"\n      }, \n      {\n        \"categories\":
+        [\n          {\n            \"id\": 44, \n            \"indicators\": [\n
+        \             {\n                \"id\": 103, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 104,
+        \n                \"name\": \"Slums\"\n              }\n            ], \n
+        \           \"name\": \"Households\\u2019 access to electricity\", \n            \"unit\":
+        \"(percent of households)\"\n          }, \n          {\n            \"id\":
+        45, \n            \"indicators\": [\n              {\n                \"id\":
+        105, \n                \"name\": \"Biomass\"\n              }, \n              {\n
+        \               \"id\": 106, \n                \"name\": \"Coal/lignite/charcoal\"\n
+        \             }, \n              {\n                \"id\": 107, \n                \"name\":
+        \"Kerosene\"\n              }, \n              {\n                \"id\":
+        108, \n                \"name\": \"LPG/PNG\"\n              }, \n              {\n
+        \               \"id\": 109, \n                \"name\": \"Electricity\"\n
+        \             }, \n              {\n                \"id\": 110, \n                \"name\":
+        \"Biogas\"\n              }\n            ], \n            \"name\": \"Households\\u2019
+        use of fuel for cooking\", \n            \"unit\": \"(percent of households)\"\n
+        \         }, \n          {\n            \"id\": 46, \n            \"indicators\":
+        [\n              {\n                \"id\": 111, \n                \"name\":
+        \"Kerosene\"\n              }, \n              {\n                \"id\":
+        112, \n                \"name\": \"Gas/other oil\"\n              }, \n              {\n
+        \               \"id\": 113, \n                \"name\": \"Electricity\"\n
+        \             }, \n              {\n                \"id\": 114, \n                \"name\":
+        \"Candle/others\"\n              }, \n              {\n                \"id\":
+        115, \n                \"name\": \"No lighting arrangement\"\n              }\n
+        \           ], \n            \"name\": \"Households\\u2019 use of fuel for
+        light\", \n            \"unit\": \"(percent of households)\"\n          },
+        \n          {\n            \"id\": 47, \n            \"indicators\": [\n              {\n
+        \               \"id\": 116, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 117, \n                \"name\":
+        \"Public\"\n              }, \n              {\n                \"id\": 118,
+        \n                \"name\": \"Private\"\n              }\n            ], \n
+        \           \"name\": \"Non-agriculture enterprises\\u2019 use of electricity\",
+        \n            \"unit\": \"(percent of establishments)\"\n          }\n        ],
+        \n        \"id\": 17, \n        \"name\": \"Energy\"\n      }, \n      {\n
+        \       \"categories\": [\n          {\n            \"id\": 48, \n            \"indicators\":
+        [\n              {\n                \"id\": 119, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 120,
+        \n                \"name\": \"Slums\"\n              }\n            ], \n
+        \           \"name\": \"Households\\u2019 access to improved water\", \n            \"unit\":
+        \"(percent of households)\"\n          }, \n          {\n            \"id\":
+        49, \n            \"indicators\": [\n              {\n                \"id\":
+        121, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 122, \n                \"name\": \"Slums\"\n              }\n
+        \           ], \n            \"name\": \"Households\\u2019 access to improved
+        sanitation\", \n            \"unit\": \"(percent of households)\"\n          },
+        \n          {\n            \"id\": 50, \n            \"indicators\": [\n              {\n
+        \               \"id\": 123, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 124, \n                \"name\":
+        \"Slums\"\n              }\n            ], \n            \"name\": \"Households\\u2019
+        access to enhanced improved sanitation\", \n            \"unit\": \"(percent
+        of households)\"\n          }\n        ], \n        \"id\": 18, \n        \"name\":
+        \"Water and Sanitation\"\n      }, \n      {\n        \"categories\": [\n
+        \         {\n            \"id\": 51, \n            \"indicators\": [\n              {\n
+        \               \"id\": 125, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 126, \n                \"name\":
+        \"Slums\"\n              }\n            ], \n            \"name\": \"Housing
+        units in good condition\", \n            \"unit\": \"(percent of households)\"\n
+        \         }, \n          {\n            \"id\": 52, \n            \"indicators\":
+        [\n              {\n                \"id\": 315, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Housing
+        units located in slums\", \n            \"unit\": \"(percent of housing units)\"\n
+        \         }, \n          {\n            \"id\": 53, \n            \"indicators\":
+        [\n              {\n                \"id\": 127, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 128,
+        \n                \"name\": \"Slums\"\n              }\n            ], \n
+        \           \"name\": \"Use of biomass to cook indoors\", \n            \"unit\":
+        \"(percent of households)\"\n          }\n        ], \n        \"id\": 19,
+        \n        \"name\": \"Housing\"\n      }\n    ]\n  }, \n  {\n    \"id\": 6,
+        \n    \"name\": \"Information Technology\", \n    \"sub_themes\": [\n      {\n
+        \       \"categories\": [], \n        \"id\": 20, \n        \"name\": \"Computer\"\n
+        \     }, \n      {\n        \"categories\": [], \n        \"id\": 21, \n        \"name\":
+        \"Internet\"\n      }, \n      {\n        \"categories\": [], \n        \"id\":
+        22, \n        \"name\": \"Cellphone\"\n      }\n    ]\n  }, \n  {\n    \"id\":
+        7, \n    \"name\": \"Finance\", \n    \"sub_themes\": [\n      {\n        \"categories\":
+        [], \n        \"id\": 23, \n        \"name\": \"Access\"\n      }\n    ]\n
+        \ }, \n  {\n    \"id\": 8, \n    \"name\": \"Business\", \n    \"sub_themes\":
+        [\n      {\n        \"categories\": [\n          {\n            \"id\": 54,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        316, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Non-agriculture enterprises\", \n            \"unit\":
+        \"(thousands)\"\n          }, \n          {\n            \"id\": 55, \n            \"indicators\":
+        [\n              {\n                \"id\": 129, \n                \"name\":
+        \"1\"\n              }, \n              {\n                \"id\": 130, \n
+        \               \"name\": \"2-5\"\n              }, \n              {\n                \"id\":
+        131, \n                \"name\": \"6-9\"\n              }, \n              {\n
+        \               \"id\": 132, \n                \"name\": \"10\\u201319\"\n
+        \             }, \n              {\n                \"id\": 133, \n                \"name\":
+        \"20\\u201399\"\n              }, \n              {\n                \"id\":
+        134, \n                \"name\": \"100+\"\n              }\n            ],
+        \n            \"name\": \"Non-agriculture enterprises by size\", \n            \"unit\":
+        \"(percent of establishments)\"\n          }, \n          {\n            \"id\":
+        56, \n            \"indicators\": [\n              {\n                \"id\":
+        135, \n                \"name\": \"Mining and quarrying (C)\"\n              },
+        \n              {\n                \"id\": 136, \n                \"name\":
+        \"Manufacturing (D)\"\n              }, \n              {\n                \"id\":
+        137, \n                \"name\": \"Electricity, gas and water supply (E)\"\n
+        \             }, \n              {\n                \"id\": 138, \n                \"name\":
+        \"Construction (F)\"\n              }, \n              {\n                \"id\":
+        139, \n                \"name\": \"Trade, hotels and restaurants (G, H)\"\n
+        \             }, \n              {\n                \"id\": 140, \n                \"name\":
+        \"Transportation, storage and communications (I)\"\n              }, \n              {\n
+        \               \"id\": 141, \n                \"name\": \"Financial intermediation
+        (J)\"\n              }, \n              {\n                \"id\": 142, \n
+        \               \"name\": \"Real estate, renting and business activities (K)\"\n
+        \             }, \n              {\n                \"id\": 143, \n                \"name\":
+        \"Public administration (L)\"\n              }, \n              {\n                \"id\":
+        144, \n                \"name\": \"Education, health and social (M, N, O)\"\n
+        \             }\n            ], \n            \"name\": \"Non-agriculture
+        enterprises by sector, ISIC 3.1\", \n            \"unit\": \"(percent of establishments)\"\n
+        \         }, \n          {\n            \"id\": 57, \n            \"indicators\":
+        [\n              {\n                \"id\": 145, \n                \"name\":
+        \"2 digit\"\n              }, \n              {\n                \"id\": 146,
+        \n                \"name\": \"4 digit\"\n              }\n            ], \n
+        \           \"name\": \"Specialization index of private non-agriculture enterprises,
+        ISIC 3.1\", \n            \"unit\": \"(index)\"\n          }, \n          {\n
+        \           \"id\": 58, \n            \"indicators\": [\n              {\n
+        \               \"id\": 147, \n                \"name\": \"2 digit\"\n              },
+        \n              {\n                \"id\": 148, \n                \"name\":
+        \"4 digit\"\n              }\n            ], \n            \"name\": \"Diversification
+        index of private non-agriculture enterprises, ISIC 3.1\", \n            \"unit\":
+        \"(index)\"\n          }, \n          {\n            \"id\": 59, \n            \"indicators\":
+        [\n              {\n                \"id\": 149, \n                \"name\":
+        \"Public\"\n              }, \n              {\n                \"id\": 150,
+        \n                \"name\": \"Private\"\n              }\n            ], \n
+        \           \"name\": \"Non-agriculture enterprises by ownership\", \n            \"unit\":
+        \"(percent of establishments)\"\n          }\n        ], \n        \"id\":
+        24, \n        \"name\": \"Economic census\"\n      }, \n      {\n        \"categories\":
+        [], \n        \"id\": 25, \n        \"name\": \"Formal manufacturing\"\n      },
+        \n      {\n        \"categories\": [], \n        \"id\": 26, \n        \"name\":
+        \"Informal manufacturing\"\n      }, \n      {\n        \"categories\": [],
+        \n        \"id\": 27, \n        \"name\": \"Informal services\"\n      }\n
+        \   ]\n  }, \n  {\n    \"id\": 9, \n    \"name\": \"Living Standards\", \n
+        \   \"sub_themes\": [\n      {\n        \"categories\": [\n          {\n            \"id\":
+        60, \n            \"indicators\": [\n              {\n                \"id\":
+        317, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Household per capita expenditure\", \n            \"unit\":
+        \"(current USD per capita per month)\"\n          }, \n          {\n            \"id\":
+        61, \n            \"indicators\": [\n              {\n                \"id\":
+        318, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Poverty rate at $1.25 a day (PPP)\", \n            \"unit\":
+        \"(percent of population)\"\n          }, \n          {\n            \"id\":
+        62, \n            \"indicators\": [\n              {\n                \"id\":
+        319, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Poverty rate at national poverty line\", \n            \"unit\":
+        \"(percent of population)\"\n          }, \n          {\n            \"id\":
+        63, \n            \"indicators\": [\n              {\n                \"id\":
+        320, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Share of bottom 40 percent\", \n            \"unit\":
+        \"(percent of population)\"\n          }, \n          {\n            \"id\":
+        64, \n            \"indicators\": [\n              {\n                \"id\":
+        321, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"90 to 10 ratio of per capita expenditure\", \n            \"unit\":
+        \"(ratio)\"\n          }, \n          {\n            \"id\": 65, \n            \"indicators\":
+        [\n              {\n                \"id\": 322, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Gini
+        coefficient of per capita expenditure\", \n            \"unit\": \"(percent)\"\n
+        \         }, \n          {\n            \"id\": 66, \n            \"indicators\":
+        [\n              {\n                \"id\": 323, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"MLD of
+        per capita expenditure\", \n            \"unit\": \"(index)\"\n          }\n
+        \       ], \n        \"id\": 28, \n        \"name\": \"Consumption\"\n      },
+        \n      {\n        \"categories\": [\n          {\n            \"id\": 67,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        151, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 152, \n                \"name\": \"Slums\"\n              }\n
+        \           ], \n            \"name\": \"Access to all key durable assets\",
+        \n            \"unit\": \"(percent of households)\"\n          }, \n          {\n
+        \           \"id\": 68, \n            \"indicators\": [\n              {\n
+        \               \"id\": 153, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 154, \n                \"name\":
+        \"Slums\"\n              }\n            ], \n            \"name\": \"Lack
+        of access to durable assets\", \n            \"unit\": \"(percent of households)\"\n
+        \         }, \n          {\n            \"id\": 69, \n            \"indicators\":
+        [\n              {\n                \"id\": 324, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Housing
+        ownership\", \n            \"unit\": \"(percent of households)\"\n          },
+        \n          {\n            \"id\": 70, \n            \"indicators\": [\n              {\n
+        \               \"id\": 325, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Land ownership\", \n            \"unit\":
+        \"(percent of households)\"\n          }, \n          {\n            \"id\":
+        71, \n            \"indicators\": [\n              {\n                \"id\":
+        326, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Gini coefficient of landholding\", \n            \"unit\":
+        \"(percent)\"\n          }, \n          {\n            \"id\": 72, \n            \"indicators\":
+        [\n              {\n                \"id\": 327, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"MLD of
+        landholding\", \n            \"unit\": \"(index)\"\n          }\n        ],
+        \n        \"id\": 29, \n        \"name\": \"Wealth\"\n      }, \n      {\n
+        \       \"categories\": [\n          {\n            \"id\": 73, \n            \"indicators\":
+        [\n              {\n                \"id\": 155, \n                \"name\":
+        \"total\"\n              }, \n              {\n                \"id\": 156,
+        \n                \"name\": \"slums\"\n              }\n            ], \n
+        \           \"name\": \"People per household\", \n            \"unit\": \"(people)\"\n
+        \         }, \n          {\n            \"id\": 74, \n            \"indicators\":
+        [\n              {\n                \"id\": 157, \n                \"name\":
+        \"total\"\n              }, \n              {\n                \"id\": 158,
+        \n                \"name\": \"slums\"\n              }\n            ], \n
+        \           \"name\": \"People per room\", \n            \"unit\": \"(people)\"\n
+        \         }, \n          {\n            \"id\": 75, \n            \"indicators\":
+        [\n              {\n                \"id\": 159, \n                \"name\":
+        \"total\"\n              }, \n              {\n                \"id\": 160,
+        \n                \"name\": \"slums\"\n              }\n            ], \n
+        \           \"name\": \"Overcrowding\", \n            \"unit\": \"(percent
+        of housing units)\"\n          }\n        ], \n        \"id\": 30, \n        \"name\":
+        \"Household size\"\n      }\n    ]\n  }, \n  {\n    \"id\": 10, \n    \"name\":
+        \"Health\", \n    \"sub_themes\": [\n      {\n        \"categories\": [\n
+        \         {\n            \"id\": 76, \n            \"indicators\": [\n              {\n
+        \               \"id\": 328, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Underweight\", \n            \"unit\":
+        \"(percent of children, 0-4 years)\"\n          }, \n          {\n            \"id\":
+        77, \n            \"indicators\": [\n              {\n                \"id\":
+        329, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Wasting\", \n            \"unit\": \"(percent of
+        children, 0-4 years)\"\n          }, \n          {\n            \"id\": 78,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        330, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Stunting\", \n            \"unit\": \"(percent of
+        children, 0-4 years)\"\n          }\n        ], \n        \"id\": 31, \n        \"name\":
+        \"Nutrition\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 79, \n            \"indicators\": [\n              {\n
+        \               \"id\": 331, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Secondary health care centers\",
+        \n            \"unit\": \"(per 1,000 people)\"\n          }, \n          {\n
+        \           \"id\": 80, \n            \"indicators\": [\n              {\n
+        \               \"id\": 332, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Primary health care centers\", \n
+        \           \"unit\": \"(per 1,000 people)\"\n          }, \n          {\n
+        \           \"id\": 81, \n            \"indicators\": [\n              {\n
+        \               \"id\": 333, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Institutional births\", \n            \"unit\":
+        \"(percent of population group)\"\n          }, \n          {\n            \"id\":
+        82, \n            \"indicators\": [\n              {\n                \"id\":
+        334, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Diarrhea treatment\", \n            \"unit\": \"(percent
+        of population group)\"\n          }, \n          {\n            \"id\": 83,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        335, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"DPT immunization\", \n            \"unit\": \"(percent
+        of population group)\"\n          }, \n          {\n            \"id\": 84,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        336, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Full immunization\", \n            \"unit\": \"(percent
+        of population group)\"\n          }\n        ], \n        \"id\": 32, \n        \"name\":
+        \"Health Services\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 85, \n            \"indicators\": [\n              {\n
+        \               \"id\": 337, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Three ante-natal care visits\", \n
+        \           \"unit\": \"(percent of population group)\"\n          }, \n          {\n
+        \           \"id\": 86, \n            \"indicators\": [\n              {\n
+        \               \"id\": 338, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Female use of condom \", \n            \"unit\":
+        \"(percent of population group)\"\n          }, \n          {\n            \"id\":
+        87, \n            \"indicators\": [\n              {\n                \"id\":
+        339, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Female contraceptive prevalence \", \n            \"unit\":
+        \"(percent of population group)\"\n          }\n        ], \n        \"id\":
+        33, \n        \"name\": \"Reproductive Health\"\n      }, \n      {\n        \"categories\":
+        [\n          {\n            \"id\": 88, \n            \"indicators\": [\n
+        \             {\n                \"id\": 161, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 162,
+        \n                \"name\": \"Female\"\n              }, \n              {\n
+        \               \"id\": 163, \n                \"name\": \"Male\"\n              }\n
+        \           ], \n            \"name\": \"Infant mortality rate\", \n            \"unit\":
+        \"(deaths per 1,000 live births)\"\n          }, \n          {\n            \"id\":
+        89, \n            \"indicators\": [\n              {\n                \"id\":
+        340, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Neonatal mortality rate\", \n            \"unit\":
+        \"(deaths per 1,000 live births)\"\n          }, \n          {\n            \"id\":
+        90, \n            \"indicators\": [\n              {\n                \"id\":
+        164, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 165, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 166, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Under-five
+        mortality rate\", \n            \"unit\": \"(deaths per 1,000 live births)\"\n
+        \         }, \n          {\n            \"id\": 91, \n            \"indicators\":
+        [\n              {\n                \"id\": 167, \n                \"name\":
+        \"Acute respiratory infection\"\n              }, \n              {\n                \"id\":
+        168, \n                \"name\": \"Diarrhea\"\n              }, \n              {\n
+        \               \"id\": 169, \n                \"name\": \"Fever\"\n              }\n
+        \           ], \n            \"name\": \"Acute illness among children\", \n
+        \           \"unit\": \"(percent of children, 0\\u20134 years)\"\n          },
+        \n          {\n            \"id\": 92, \n            \"indicators\": [\n              {\n
+        \               \"id\": 170, \n                \"name\": \"Acute respiratory
+        infection\"\n              }, \n              {\n                \"id\": 171,
+        \n                \"name\": \"Diarrhea\"\n              }, \n              {\n
+        \               \"id\": 172, \n                \"name\": \"Fever\"\n              }\n
+        \           ], \n            \"name\": \"Acute illness\", \n            \"unit\":
+        \"(per 100,000 people)\"\n          }, \n          {\n            \"id\":
+        93, \n            \"indicators\": [\n              {\n                \"id\":
+        173, \n                \"name\": \"Arthritis\"\n              }, \n              {\n
+        \               \"id\": 174, \n                \"name\": \"Asthma\"\n              },
+        \n              {\n                \"id\": 175, \n                \"name\":
+        \"Diabetes\"\n              }, \n              {\n                \"id\":
+        176, \n                \"name\": \"Hypertension\"\n              }, \n              {\n
+        \               \"id\": 177, \n                \"name\": \"Tuberculosis\"\n
+        \             }\n            ], \n            \"name\": \"Chronic illness\",
+        \n            \"unit\": \"(per 100,000 people)\"\n          }\n        ],
+        \n        \"id\": 34, \n        \"name\": \"Mortality and morbidity\"\n      }\n
+        \   ]\n  }, \n  {\n    \"id\": 11, \n    \"name\": \"Education\", \n    \"sub_themes\":
+        [\n      {\n        \"categories\": [\n          {\n            \"id\": 94,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        178, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 179, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 180, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Gross
+        primary enrollment\", \n            \"unit\": \"(percent of population group)\"\n
+        \         }, \n          {\n            \"id\": 95, \n            \"indicators\":
+        [\n              {\n                \"id\": 341, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Out-of-school
+        children\", \n            \"unit\": \"(percent of population group)\"\n          }\n
+        \       ], \n        \"id\": 35, \n        \"name\": \"Enrollment\"\n      },
+        \n      {\n        \"categories\": [\n          {\n            \"id\": 96,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        181, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 182, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 183, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Literacy
+        rate, 7+ years\", \n            \"unit\": \"(percent of population group)\"\n
+        \         }, \n          {\n            \"id\": 97, \n            \"indicators\":
+        [\n              {\n                \"id\": 184, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 185,
+        \n                \"name\": \"Female\"\n              }, \n              {\n
+        \               \"id\": 186, \n                \"name\": \"Male\"\n              }\n
+        \           ], \n            \"name\": \"Literacy rate, 15+ years\", \n            \"unit\":
+        \"(percent of population group)\"\n          }, \n          {\n            \"id\":
+        98, \n            \"indicators\": [\n              {\n                \"id\":
+        187, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 188, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 189, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Secondary
+        education completion rate, 15+ years\", \n            \"unit\": \"(percent
+        of population group)\"\n          }, \n          {\n            \"id\": 99,
+        \n            \"indicators\": [\n              {\n                \"id\":
+        190, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 191, \n                \"name\": \"Female\"\n              },
+        \n              {\n                \"id\": 192, \n                \"name\":
+        \"Male\"\n              }\n            ], \n            \"name\": \"Tertiary
+        education completion rate, 15+ years\", \n            \"unit\": \"(percent
+        of population group)\"\n          }\n        ], \n        \"id\": 36, \n        \"name\":
+        \"Attainment\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 100, \n            \"indicators\": [\n              {\n
+        \               \"id\": 342, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Children who can recognize numbers
+        1\\u20139\", \n            \"unit\": \"(percent of population group)\"\n          },
+        \n          {\n            \"id\": 101, \n            \"indicators\": [\n
+        \             {\n                \"id\": 343, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Children
+        who can read letters or words\", \n            \"unit\": \"(percent of population
+        group)\"\n          }, \n          {\n            \"id\": 102, \n            \"indicators\":
+        [\n              {\n                \"id\": 344, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Children
+        who can do subtraction\", \n            \"unit\": \"(percent of population
+        group)\"\n          }, \n          {\n            \"id\": 103, \n            \"indicators\":
+        [\n              {\n                \"id\": 345, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Children
+        who can read Grade 1 text\", \n            \"unit\": \"(percent of population
+        group)\"\n          }\n        ], \n        \"id\": 37, \n        \"name\":
+        \"Learning\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 104, \n            \"indicators\": [\n              {\n
+        \               \"id\": 346, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Classrooms in good condition in primary
+        schools\", \n            \"unit\": \"(percent of classrooms)\"\n          },
+        \n          {\n            \"id\": 105, \n            \"indicators\": [\n
+        \             {\n                \"id\": 347, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Access
+        to electricity in primary schools\", \n            \"unit\": \"(percentof
+        schools)\"\n          }, \n          {\n            \"id\": 106, \n            \"indicators\":
+        [\n              {\n                \"id\": 348, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Girls\\u2019
+        toilets in primary schools\", \n            \"unit\": \"(percent of schools
+        with girls)\"\n          }, \n          {\n            \"id\": 107, \n            \"indicators\":
+        [\n              {\n                \"id\": 349, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Drinking
+        water facility in primary schools\", \n            \"unit\": \"(percent of
+        schools)\"\n          }, \n          {\n            \"id\": 108, \n            \"indicators\":
+        [\n              {\n                \"id\": 350, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Pupil-teacher
+        ratio in primary schools\", \n            \"unit\": \"(students per teacher)\"\n
+        \         }, \n          {\n            \"id\": 109, \n            \"indicators\":
+        [\n              {\n                \"id\": 351, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Pupil-teacher
+        ratio over 30 in primary schools\", \n            \"unit\": \"(percent of
+        schools)\"\n          }\n        ], \n        \"id\": 38, \n        \"name\":
+        \"Education Services\"\n      }\n    ]\n  }, \n  {\n    \"id\": 12, \n    \"name\":
+        \"Environment\", \n    \"sub_themes\": [\n      {\n        \"categories\":
+        [\n          {\n            \"id\": 110, \n            \"indicators\": [\n
+        \             {\n                \"id\": 352, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Elevation\",
+        \n            \"unit\": \"(meters)\"\n          }, \n          {\n            \"id\":
+        111, \n            \"indicators\": [\n              {\n                \"id\":
+        353, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Surface Roughness\", \n            \"unit\": \"(meters)\"\n
+        \         }, \n          {\n            \"id\": 112, \n            \"indicators\":
+        [\n              {\n                \"id\": 354, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Land
+        area with limited or no constraints\", \n            \"unit\": \"(percent
+        of land area)\"\n          }, \n          {\n            \"id\": 113, \n            \"indicators\":
+        [\n              {\n                \"id\": 193, \n                \"name\":
+        \"Total\"\n              }, \n              {\n                \"id\": 194,
+        \n                \"name\": \"Ground Water\"\n              }, \n              {\n
+        \               \"id\": 195, \n                \"name\": \"Surface Water\"\n
+        \             }\n            ], \n            \"name\": \"Land area equipped
+        for irrigation\", \n            \"unit\": \"Percent of Land Area\"\n          },
+        \n          {\n            \"id\": 114, \n            \"indicators\": [\n
+        \             {\n                \"id\": 355, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Land
+        area actually irrigated\", \n            \"unit\": \"Percent of Land Area\"\n
+        \         }\n        ], \n        \"id\": 39, \n        \"name\": \"Terrain\"\n
+        \     }, \n      {\n        \"categories\": [\n          {\n            \"id\":
+        115, \n            \"indicators\": [\n              {\n                \"id\":
+        356, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Cropland\", \n            \"unit\": \"(percent of
+        area)\"\n          }, \n          {\n            \"id\": 116, \n            \"indicators\":
+        [\n              {\n                \"id\": 357, \n                \"name\":
+        \"Total\"\n              }\n            ], \n            \"name\": \"Forest\",
+        \n            \"unit\": \"(percent of area)\"\n          }, \n          {\n
+        \           \"id\": 117, \n            \"indicators\": [\n              {\n
+        \               \"id\": 196, \n                \"name\": \"Total\"\n              },
+        \n              {\n                \"id\": 197, \n                \"name\":
+        \"Public\"\n              }, \n              {\n                \"id\": 198,
+        \n                \"name\": \"Private\"\n              }, \n              {\n
+        \               \"id\": 199, \n                \"name\": \"Foreign\"\n              }\n
+        \           ], \n            \"name\": \"Mineral Facilities\", \n            \"unit\":
+        \"(number of facilities)\"\n          }, \n          {\n            \"id\":
+        118, \n            \"indicators\": [\n              {\n                \"id\":
+        358, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Mineral Production Capacity\", \n            \"unit\":
+        \"thousand metric tons per year\"\n          }, \n          {\n            \"id\":
+        119, \n            \"indicators\": [\n              {\n                \"id\":
+        200, \n                \"name\": \"Total\"\n              }, \n              {\n
+        \               \"id\": 201, \n                \"name\": \"National\"\n              },
+        \n              {\n                \"id\": 202, \n                \"name\":
+        \"International\"\n              }\n            ], \n            \"name\":
+        \"Protected Land\", \n            \"unit\": \"percent of area\"\n          }\n
+        \       ], \n        \"id\": 40, \n        \"name\": \"Natural resources\"\n
+        \     }, \n      {\n        \"categories\": [\n          {\n            \"id\":
+        120, \n            \"indicators\": [\n              {\n                \"id\":
+        203, \n                \"name\": \"January\"\n              }, \n              {\n
+        \               \"id\": 204, \n                \"name\": \"February\"\n              },
+        \n              {\n                \"id\": 205, \n                \"name\":
+        \"March\"\n              }, \n              {\n                \"id\": 206,
+        \n                \"name\": \"April\"\n              }, \n              {\n
+        \               \"id\": 207, \n                \"name\": \"May\"\n              },
+        \n              {\n                \"id\": 208, \n                \"name\":
+        \"June\"\n              }, \n              {\n                \"id\": 209,
+        \n                \"name\": \"July\"\n              }, \n              {\n
+        \               \"id\": 210, \n                \"name\": \"August\"\n              },
+        \n              {\n                \"id\": 211, \n                \"name\":
+        \"September\"\n              }, \n              {\n                \"id\":
+        212, \n                \"name\": \"October\"\n              }, \n              {\n
+        \               \"id\": 213, \n                \"name\": \"November\"\n              },
+        \n              {\n                \"id\": 214, \n                \"name\":
+        \"December\"\n              }\n            ], \n            \"name\": \"Monthly
+        temperature\", \n            \"unit\": \"(\\u00baC)\"\n          }, \n          {\n
+        \           \"id\": 121, \n            \"indicators\": [\n              {\n
+        \               \"id\": 215, \n                \"name\": \"January\"\n              },
+        \n              {\n                \"id\": 216, \n                \"name\":
+        \"February\"\n              }, \n              {\n                \"id\":
+        217, \n                \"name\": \"March\"\n              }, \n              {\n
+        \               \"id\": 218, \n                \"name\": \"April\"\n              },
+        \n              {\n                \"id\": 219, \n                \"name\":
+        \"May\"\n              }, \n              {\n                \"id\": 220,
+        \n                \"name\": \"June\"\n              }, \n              {\n
+        \               \"id\": 221, \n                \"name\": \"July\"\n              },
+        \n              {\n                \"id\": 222, \n                \"name\":
+        \"August\"\n              }, \n              {\n                \"id\": 223,
+        \n                \"name\": \"September\"\n              }, \n              {\n
+        \               \"id\": 224, \n                \"name\": \"October\"\n              },
+        \n              {\n                \"id\": 225, \n                \"name\":
+        \"November\"\n              }, \n              {\n                \"id\":
+        226, \n                \"name\": \"December\"\n              }\n            ],
+        \n            \"name\": \"Decadal average of monthly temperature\", \n            \"unit\":
+        \"(\\u00baC)\"\n          }, \n          {\n            \"id\": 122, \n            \"indicators\":
+        [\n              {\n                \"id\": 227, \n                \"name\":
+        \"January\"\n              }, \n              {\n                \"id\": 228,
+        \n                \"name\": \"February\"\n              }, \n              {\n
+        \               \"id\": 229, \n                \"name\": \"March\"\n              },
+        \n              {\n                \"id\": 230, \n                \"name\":
+        \"April\"\n              }, \n              {\n                \"id\": 231,
+        \n                \"name\": \"May\"\n              }, \n              {\n
+        \               \"id\": 232, \n                \"name\": \"June\"\n              },
+        \n              {\n                \"id\": 233, \n                \"name\":
+        \"July\"\n              }, \n              {\n                \"id\": 234,
+        \n                \"name\": \"August\"\n              }, \n              {\n
+        \               \"id\": 235, \n                \"name\": \"September\"\n              },
+        \n              {\n                \"id\": 236, \n                \"name\":
+        \"October\"\n              }, \n              {\n                \"id\": 237,
+        \n                \"name\": \"November\"\n              }, \n              {\n
+        \               \"id\": 238, \n                \"name\": \"December\"\n              }\n
+        \           ], \n            \"name\": \"Decadal variation of monthly temperature\",
+        \n            \"unit\": \"(\\u00baC)\"\n          }, \n          {\n            \"id\":
+        123, \n            \"indicators\": [\n              {\n                \"id\":
+        239, \n                \"name\": \"January\"\n              }, \n              {\n
+        \               \"id\": 240, \n                \"name\": \"February\"\n              },
+        \n              {\n                \"id\": 241, \n                \"name\":
+        \"March\"\n              }, \n              {\n                \"id\": 242,
+        \n                \"name\": \"April\"\n              }, \n              {\n
+        \               \"id\": 243, \n                \"name\": \"May\"\n              },
+        \n              {\n                \"id\": 244, \n                \"name\":
+        \"June\"\n              }, \n              {\n                \"id\": 245,
+        \n                \"name\": \"July\"\n              }, \n              {\n
+        \               \"id\": 246, \n                \"name\": \"August\"\n              },
+        \n              {\n                \"id\": 247, \n                \"name\":
+        \"September\"\n              }, \n              {\n                \"id\":
+        248, \n                \"name\": \"October\"\n              }, \n              {\n
+        \               \"id\": 249, \n                \"name\": \"November\"\n              },
+        \n              {\n                \"id\": 250, \n                \"name\":
+        \"December\"\n              }\n            ], \n            \"name\": \"Temperature
+        anomaly\", \n            \"unit\": \"(\\u00baC)\"\n          }, \n          {\n
+        \           \"id\": 124, \n            \"indicators\": [\n              {\n
+        \               \"id\": 251, \n                \"name\": \"January\"\n              },
+        \n              {\n                \"id\": 252, \n                \"name\":
+        \"February\"\n              }, \n              {\n                \"id\":
+        253, \n                \"name\": \"March\"\n              }, \n              {\n
+        \               \"id\": 254, \n                \"name\": \"April\"\n              },
+        \n              {\n                \"id\": 255, \n                \"name\":
+        \"May\"\n              }, \n              {\n                \"id\": 256,
+        \n                \"name\": \"June\"\n              }, \n              {\n
+        \               \"id\": 257, \n                \"name\": \"July\"\n              },
+        \n              {\n                \"id\": 258, \n                \"name\":
+        \"August\"\n              }, \n              {\n                \"id\": 259,
+        \n                \"name\": \"September\"\n              }, \n              {\n
+        \               \"id\": 260, \n                \"name\": \"October\"\n              },
+        \n              {\n                \"id\": 261, \n                \"name\":
+        \"November\"\n              }, \n              {\n                \"id\":
+        262, \n                \"name\": \"December\"\n              }\n            ],
+        \n            \"name\": \"Precipitation\", \n            \"unit\": \"(mm)\"\n
+        \         }, \n          {\n            \"id\": 125, \n            \"indicators\":
+        [\n              {\n                \"id\": 263, \n                \"name\":
+        \"January\"\n              }, \n              {\n                \"id\": 264,
+        \n                \"name\": \"February\"\n              }, \n              {\n
+        \               \"id\": 265, \n                \"name\": \"March\"\n              },
+        \n              {\n                \"id\": 266, \n                \"name\":
+        \"April\"\n              }, \n              {\n                \"id\": 267,
+        \n                \"name\": \"May\"\n              }, \n              {\n
+        \               \"id\": 268, \n                \"name\": \"June\"\n              },
+        \n              {\n                \"id\": 269, \n                \"name\":
+        \"July\"\n              }, \n              {\n                \"id\": 270,
+        \n                \"name\": \"August\"\n              }, \n              {\n
+        \               \"id\": 271, \n                \"name\": \"September\"\n              },
+        \n              {\n                \"id\": 272, \n                \"name\":
+        \"October\"\n              }, \n              {\n                \"id\": 273,
+        \n                \"name\": \"November\"\n              }, \n              {\n
+        \               \"id\": 274, \n                \"name\": \"December\"\n              }\n
+        \           ], \n            \"name\": \"Decadal average of monthly precipitation\",
+        \n            \"unit\": \"(mm)\"\n          }, \n          {\n            \"id\":
+        126, \n            \"indicators\": [\n              {\n                \"id\":
+        275, \n                \"name\": \"January\"\n              }, \n              {\n
+        \               \"id\": 276, \n                \"name\": \"February\"\n              },
+        \n              {\n                \"id\": 277, \n                \"name\":
+        \"March\"\n              }, \n              {\n                \"id\": 278,
+        \n                \"name\": \"April\"\n              }, \n              {\n
+        \               \"id\": 279, \n                \"name\": \"May\"\n              },
+        \n              {\n                \"id\": 280, \n                \"name\":
+        \"June\"\n              }, \n              {\n                \"id\": 281,
+        \n                \"name\": \"July\"\n              }, \n              {\n
+        \               \"id\": 282, \n                \"name\": \"August\"\n              },
+        \n              {\n                \"id\": 283, \n                \"name\":
+        \"September\"\n              }, \n              {\n                \"id\":
+        284, \n                \"name\": \"October\"\n              }, \n              {\n
+        \               \"id\": 285, \n                \"name\": \"November\"\n              },
+        \n              {\n                \"id\": 286, \n                \"name\":
+        \"December\"\n              }\n            ], \n            \"name\": \"Decadal
+        variation of monthly precipitation\", \n            \"unit\": \"(mm)\"\n          },
+        \n          {\n            \"id\": 127, \n            \"indicators\": [\n
+        \             {\n                \"id\": 287, \n                \"name\":
+        \"January\"\n              }, \n              {\n                \"id\": 288,
+        \n                \"name\": \"February\"\n              }, \n              {\n
+        \               \"id\": 289, \n                \"name\": \"March\"\n              },
+        \n              {\n                \"id\": 290, \n                \"name\":
+        \"April\"\n              }, \n              {\n                \"id\": 291,
+        \n                \"name\": \"May\"\n              }, \n              {\n
+        \               \"id\": 292, \n                \"name\": \"June\"\n              },
+        \n              {\n                \"id\": 293, \n                \"name\":
+        \"July\"\n              }, \n              {\n                \"id\": 294,
+        \n                \"name\": \"August\"\n              }, \n              {\n
+        \               \"id\": 295, \n                \"name\": \"September\"\n              },
+        \n              {\n                \"id\": 296, \n                \"name\":
+        \"October\"\n              }, \n              {\n                \"id\": 297,
+        \n                \"name\": \"November\"\n              }, \n              {\n
+        \               \"id\": 298, \n                \"name\": \"December\"\n              }\n
+        \           ], \n            \"name\": \"Precipitation anomaly\", \n            \"unit\":
+        \"(mm)\"\n          }\n        ], \n        \"id\": 41, \n        \"name\":
+        \"Climate\"\n      }, \n      {\n        \"categories\": [\n          {\n
+        \           \"id\": 128, \n            \"indicators\": [\n              {\n
+        \               \"id\": 359, \n                \"name\": \"Total\"\n              }\n
+        \           ], \n            \"name\": \"Carbon monoxide levels\", \n            \"unit\":
+        \"(parts per billion by volume)\"\n          }, \n          {\n            \"id\":
+        129, \n            \"indicators\": [\n              {\n                \"id\":
+        360, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Nitrogen dioxide levels\", \n            \"unit\":
+        \"(billion molecules/mm2)\"\n          }, \n          {\n            \"id\":
+        130, \n            \"indicators\": [\n              {\n                \"id\":
+        361, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Aerosol particle radius\", \n            \"unit\":
+        \"(percent of small particles)\"\n          }, \n          {\n            \"id\":
+        131, \n            \"indicators\": [\n              {\n                \"id\":
+        362, \n                \"name\": \"Total\"\n              }\n            ],
+        \n            \"name\": \"Aerosol optical thickness\", \n            \"unit\":
+        \"(thickness scale  0\\u20131)\"\n          }\n        ], \n        \"id\":
+        42, \n        \"name\": \"Pollution\"\n      }\n    ]\n  }\n]\n"
+    http_version: 
+  recorded_at: Mon, 04 Feb 2019 20:57:31 GMT
+recorded_with: VCR 4.0.0

@@ -12,7 +12,7 @@ module Pruner
     UPSTREAM_FETCH_RETRY_DELAY = ENV['UPSTREAM_FETCH_RETRY_DELAY'].to_f
 
     def call(upstream_name)
-      raise ArgumentError unless upstream_name.is_a?(String)
+      raise ArgumentError, "'upstream_name' must be a String" unless upstream_name.is_a?(String)
       UPSTREAM_FETCH_ATTEMPTS.times do
         response = HTTP.get("#{UPSTREAM_BASE_URL}#{upstream_name}")
         case response.code

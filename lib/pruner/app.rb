@@ -6,6 +6,12 @@ module Pruner
 
     API_CONTENT_TYPE = 'application/json'
 
+    not_found do
+      logger.info m: env['sinatra.error'].message
+      content_type API_CONTENT_TYPE
+      [404, { message: 'Not found' }.to_json]
+    end
+
     error NotFound do
       logger.info m: env['sinatra.error'].message
       content_type API_CONTENT_TYPE

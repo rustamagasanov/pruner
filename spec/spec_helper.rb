@@ -3,6 +3,7 @@
 require 'rack/test'
 require 'rspec'
 require 'logger'
+require 'support/vcr'
 
 ENV['RACK_ENV'] = 'test'
 
