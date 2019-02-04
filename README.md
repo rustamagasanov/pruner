@@ -25,7 +25,7 @@ and accepts an array of `indicators` as params.
 
 ## How to start
 
-The service has bundle of gems specified within a `Gemfile`.
+The service utilizes `bundler` and the gems used lie within a `Gemfile`.
 
 The service uses `Rack` middleware and `Puma` as a server, there are no specific configs for it, so it runs
 with the default configuration. The basic command is `bundle exec rackup -p *port* -E *environment*`
