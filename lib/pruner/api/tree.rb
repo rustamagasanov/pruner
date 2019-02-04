@@ -10,7 +10,8 @@ module Pruner::Api::Tree
         params['indicator_ids'] && !params['indicator_ids'].is_a?(Array)
       upstream_data = Pruner::UpstreamFetcher.call(upstream_name)
       ids = params['indicator_ids'].map(&:to_i)
-      res = Pruner::TreePruner.new(upstream_data, ids).call
+      tree = Pruner::TreePruner.new(upstream_data, ids).call
+      JSON.pretty_generate(tree)
     end
   end
 end

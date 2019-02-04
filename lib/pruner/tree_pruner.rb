@@ -12,9 +12,12 @@ module Pruner
     end
 
     def call
-      search_tree(tree, 0)
-      logger.info m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
-      logger.info paths
+      unless tree_pruned?
+        search_tree(tree)
+        logger.info m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
+        prune_tree(tree)
+      end
+      tree
     end
 
     private
@@ -26,9 +29,9 @@ module Pruner
     #
     # @param node [Hash]
     # @param depth [Integer]
-    # @param path [Array] Preserves the path represented by ids
+    # @param path [Array] Preserves the path to each interesting id
     #
-    def search_tree(node, depth, path = [])
+    def search_tree(node, depth = 0, path = [])
       node.each do |subnode|
         if subnode[TREE_NODE_NAMES[depth]].is_a?(Array)
           search_tree(subnode[TREE_NODE_NAMES[depth]], depth + 1, path + [subnode['id']])
@@ -46,12 +49,43 @@ module Pruner
       end
     end
 
-    def paths
-      @paths ||= []
+    # Prunes a tree recursively
+    # depth == 0 means start from the root
+    #
+    # transposed_paths contains the ids that should be preserved
+    # on each depth(layer) of the tree, everything else is removed
+    #
+    # @param node [Hash]
+    # @param depth [Integer]
+    #
+    def prune_tree(node, depth = 0)
+      node.delete_if { |subnode| !transposed_paths[depth].include?(subnode['id']) }
+      node.each do |subnode|
+        if subnode[TREE_NODE_NAMES[depth]].is_a?(Array)
+          prune_tree(subnode[TREE_NODE_NAMES[depth]], depth + 1)
+        end
+      end
+      tree_pruned!
     end
 
     def ids_found
       @ids_found ||= []
+    end
+
+    def paths
+      @paths ||= []
+    end
+
+    def transposed_paths
+      @transposed_paths ||= paths.transpose
+    end
+
+    def tree_pruned!
+      @tree_pruned = true
+    end
+
+    def tree_pruned?
+      @tree_pruned ||= false
     end
 
     def logger
