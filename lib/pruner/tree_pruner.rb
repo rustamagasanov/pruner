@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
-
 module Pruner
   class TreePruner
     TREE_NODE_NAMES = ENV['TREE_NODE_NAMES'].split(',')
@@ -9,15 +7,14 @@ module Pruner
     def initialize(tree, ids)
       raise ArgumentError, "'tree' must be an Array" unless tree.is_a?(Array)
       raise ArgumentError, "'ids' must be an Array" unless ids.is_a?(Array)
-      raise ArgumentError, "'ids' must be Integers" unless ids.all? { |id| id.is_a?(Integer) }
+      raise ArgumentError, "'ids' must consist of Integers" unless ids.all? { |id| id.is_a?(Integer) }
       @tree, @ids = tree, ids
     end
 
     def call
       search_tree(tree, 0)
-      logger.warn m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
+      logger.info m: "ids '#{ids - ids_found}' weren't found!" if ids - ids_found != []
       logger.info paths
-      # binding.pry
     end
 
     private
@@ -43,7 +40,7 @@ module Pruner
             ids_found << subnode['id']
           end
 
-          # Stop searching if all the ids were found
+          # If all ids were found - stop searching
           return if ids - ids_found == []
         end
       end
